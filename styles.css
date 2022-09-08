@@ -10,15 +10,17 @@ a{
     color:black;
 }
 
-.header {
+header {
     background-color: #BAC5CF;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: relative;
     width: 100%;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header ul {
+header ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -26,13 +28,13 @@ a{
     background-color: #BAC5CF;
 }
 
-.header ul a {
+header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
 }
 
-.header ul a:hover {
+header ul a:hover {
     background-color: white;
 }
 
@@ -44,26 +46,26 @@ a{
     margin: auto;
 }
 
-.header .logo {
-    float: left;
+header .logo {
+    float: right;
     display: block;
     padding: 10px 20px;
 }
 
-.header .menu {
+header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
-.header .menu-icon {
+header .menu-icon {
     padding: 28px 20px;
     position: relative;
-    float: left;
+    float: right;
     cursor: pointer;
 }
 
-.header .menu-icon .nav-icon {
+header .menu-icon .nav-icon {
     background: #333;
     display: block;
     height: 2px;
@@ -72,18 +74,18 @@ a{
     transition: background .2s ease-out;
 }
 
-.header .menu-icon .nav-icon:before {
+header .menu-icon .nav-icon:before {
     background: #333;
     content:"";
     display: block;
     height: 100%;
     width: 100%;
-    position:absolute;
+    position: absolute;
     transition: all .2s ease-out;
     top: 5px;
 }
 
-.header .menu-icon .nav-icon:after {
+header .menu-icon .nav-icon:after {
     background: #333;
     content:"";
     display: block;
@@ -94,24 +96,24 @@ a{
     top: -5px;
 }
 
-.header .menu-btn {
+header .menu-btn {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+header .menu-btn:checked ~ .menu {
     max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+header .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 }
@@ -248,25 +250,25 @@ footer {
 }
 
 @media (min-width: 48em) {
-    .header {
+    header {
         background-color: #BAC5CF;
         box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-        position: fixed;
+        position: ;
         width: 100%;
         z-index: 3;
     }
-    .header li {
+    header li {
         float: left;
     }
-    .header li a {
+    header li a {
         padding: 20px 30px;
     }
-    .header .menu {
+    header .menu {
         clear: none;
-        float: left;
+        
         max-height: none;
     }
-    .header .menu-icon {
+    header .menu-icon {
         display: none;
     }
     .logo-main {
@@ -275,5 +277,16 @@ footer {
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+    .eldenring-video {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        display: block;
+        padding: 30px;
+        margin: 10px;
+        text-align: center;
     }
 }
