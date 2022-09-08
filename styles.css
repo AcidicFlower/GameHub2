@@ -1,0 +1,279 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#5B859E, #1D2441);
+}
+
+a{
+    color:black;
+}
+
+.header {
+    background-color: #BAC5CF;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #BAC5CF;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    background-color: white;
+}
+
+.logo-main {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #333;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #333;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.eldenring-video {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+.gameimage1 {
+    height: 350px;
+    width: 300px;
+}
+
+.gameimage2 {
+    height: 350px;
+    width: 300px;
+}
+
+.gameimage3 {
+    height: 350px;
+    width: 300px;
+}
+
+.gameimage4 {
+    height: 350px;
+    width: 300px;
+}
+
+.gameimage5 {
+    height: 350px;
+    width: 300px;
+}
+
+h1 {
+    color:white;
+    font-size: 2em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h2 {
+    color:white;
+    font-size: 2em;
+    text-align: center;
+}
+    
+a {
+    color: white
+}
+
+.cta-all {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.cta {
+    background-image: linear-gradient(#1D2441, #5B859E);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 130px;
+    max-height: 32px;
+    margin: 5px;
+    display: block;
+}
+
+.cta-group1, .cta-group2 {
+    display: flex;
+    gap: 5px;
+}
+
+.media-logo {
+    margin: 20px;
+}
+
+.media {
+    display: flex;
+    margin-top: 120px;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.about {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.media_icons {
+    display: flex;
+}
+
+.media-links {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 48em) {
+    .header {
+        background-color: #BAC5CF;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: left;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .logo-main {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
