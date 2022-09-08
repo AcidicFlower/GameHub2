@@ -6,10 +6,6 @@ body{
     background-image: linear-gradient(#5B859E, #1D2441);
 }
 
-a{
-    color:black;
-}
-
 header {
     background-color: #BAC5CF;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -38,6 +34,10 @@ header ul a:hover {
     background-color: white;
 }
 
+a {
+    color:#1D2441;
+}
+
 .logo-main {
     width: 150px;
     display: flex;
@@ -63,6 +63,10 @@ header .menu-icon {
     position: relative;
     float: right;
     cursor: pointer;
+}
+
+li {
+    color: #1D2441;
 }
 
 header .menu-icon .nav-icon {
@@ -166,10 +170,6 @@ h2 {
     color:white;
     font-size: 2em;
     text-align: center;
-}
-    
-a {
-    color: white
 }
 
 .cta-all {
