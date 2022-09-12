@@ -175,30 +175,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     justify-content: center;
 }
 
-.eldenring-video {
-    width: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
-    margin: 10px;
-    text-align: center;
-    display: block;
-}
-
-.gameimage1, .gameimage2, .gameimage3, .gameimage4, .gameimage5 {
-    height: 350px;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
-    margin: 10px;
-    text-align: center;
-    display: block;
-}
-
 h1, h2 {
     color:white;
     font-size: 1.5em;
@@ -224,11 +200,6 @@ h1, h2 {
     max-height: 32px;
     margin: 5px;
     display: block;
-}
-
-.cta-group1, .cta-group2 {
-    display: flex;
-    gap: 5px;
 }
 
 .media-logo {
